@@ -7,6 +7,7 @@ body {
   opacity: 100%;
   font-size: 40px;
   color: white;
+  overflow: hidden;
 }
 
 
@@ -110,13 +111,14 @@ body {
 }
 
 .background1 {
-  position: absolute;
-  bottom: 0%;
-  width: 20000000000000000%;
-  height: 100%;
-  left: 0%;
-  background-image: url(bg.png);
-  background-repeat: repeat;
+  background-image: url("bg.png");
+  background-repeat: repeat-x;
+  background-position: left bottom;
+  background-size: auto 100%;
+  position: fixed;
+  align-items: end;
+  inset: 0;
+  background-repeat: repeat-x;
   z-index: -2;
 }
 
@@ -126,6 +128,7 @@ body {
   text-shadow: black 3px 3px 5px;
   font-size: 30px;
 }
+
 
 @media screen and (max-width: 800px) {
 
